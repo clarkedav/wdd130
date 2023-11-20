@@ -1,0 +1,56 @@
+@import url('https://https://fonts.google.com/specimen/Acme/tester?query=acme')
+
+:root> {
+--primary-color: #75B9BE;
+  --secondary-color: #fbb13c;
+  --accent1-color: #fe6847;
+  --accent2-color: #B3D6C6;
+
+  --heading-font: 'Acme', serif;
+  --paragraph-font: 'Crimson pro', serif;
+
+  --nav-background-color: #91C4F2;
+  --nav-link-color: #8CA0D7;
+  --nav-hover-link-color: #9D79BC;
+  --nav-hover-background-color: #7E1F86;
+}
+
+body {
+  f______: var(--paragraph-font);
+  m______: ______;
+  p______: ______;
+}
+        
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+header {
+  padding: 20px;
+  background-color: var(--accent1-color);
+}
+p {
+    padding: 25px;
+}
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
