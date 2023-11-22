@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 main {
     max-width: 840px;
 }
@@ -17,6 +18,7 @@ nav a {
     display: block;
     padding: 20px;
 }
+
 h1 {
     color: steelblue;
 }
@@ -27,23 +29,24 @@ img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-
-    p {
-        padding: 10px;
-    }
-
 }
-aside{
+
+img p {
+    padding: 10px;
+}
+
+aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
+    position: relative;
 }
 
-aside img{
+aside img {
     width: 200px;
     height: auto;
 }
@@ -51,32 +54,32 @@ aside img{
 main img {
     width: 150px;
     height: auto;
+    float: right;
+    max-width: 100%;
+    margin: 0 0 10px 10px;
 }
 
-p { padding:0;}
+p {
+    padding: 0;
+}
 
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
 }
+
 /* Class Selectors */
 .box {
     margin: 1rem;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    background-color: "#ddd";
+    background-color: #ddd;
     color: #000;
 }
-main img{
-    /* other declarations */
-    float: right;
-    max-width:100%; /* Ensure the image doesn't exceed its container width */
-    height: auto; /* Maintain the image's aspect ratio */
-    margin: 0 0 10px 10px; /* Adjust margin for spacing */
-}
+
 aside h2 {
-    position: static;
+    position: absolute;
     top: 47px;
     left: 150px;
 }
