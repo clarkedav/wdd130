@@ -6,7 +6,7 @@
 :root {
   --primary-color: #75B9BE;
   --secondary-color: #FBB13C;
-  --text-color: #FE6847;;
+  --text-color: #1d1717;;
 }
 
 /* General Styles */
@@ -108,4 +108,50 @@ footer {
   max-width: 30px;
   height: auto;
   margin: 0 10px;
+}
+body {
+  font-family: Acme, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Adjust column widths as needed */
+  align-items: center;
+  background-color: #333; /* Add your background color */
+  color: white; /* Add your text color */
+  padding: 10px;
+}
+
+.logo {
+  max-width: 100px; /* Adjust as needed */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.adventures {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.adventures figure {
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #333; /* Add your background color */
+  padding: 10px;
+}
+
+.footer img {
+  max-width: 30px; /* Adjust as needed */
+  margin-left: 10px; /* Adjust spacing between social icons */
 }
