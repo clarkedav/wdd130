@@ -1,38 +1,36 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Crimson+Pro:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
 
 /* Define CSS variables for color scheme */
 :root {
   --primary-color: #75B9BE;
   --secondary-color: #FBB13C;
-  --text-color: #1d1717;;
+  --text-color: #1d1717;
 }
 
 /* General Styles */
-body {
+body,
+footer,
+header,
+header img,
+main,
+nav,
+nav a,
+.sociallinks,
+.sociallinks a,
+.sociallinks img,
+.hero img {
   font-family: 'Acme', sans-serif;
-  color: var(--text-color);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-.hero img {
-  position: relative;
-}
-
 
 /* Header Styles */
 header {
   background-color: var(--primary-color);
   color: white;
   padding: 10px;
-}
-
-header img {
-  max-width: 100%;
-  height: auto;
 }
 
 nav {
@@ -62,20 +60,20 @@ main {
   height: auto;
 }
 
-.hero h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--primary-color);
-  font-size: 2.5em;
-}
-
+.hero h1,
 .hero article {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+  color: var(--primary-color);
+  font-size: 2.5em;
+}
+
+.hero article {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   text-align: center;
@@ -109,94 +107,12 @@ footer {
   height: auto;
   margin: 0 10px;
 }
-body {
-  font-family: Acme, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-.header {
-  display: grid;
-  grid-template-columns: auto 1fr auto; /* Adjust column widths as needed */
-  align-items: center;
-  background-color: #333; /* Add your background color */
-  color: white; /* Add your text color */
-  padding: 10px;
-}
-
-.logo {
-  max-width: 100px; /* Adjust as needed */
-}
-
-.nav {
-  display: flex;
-  justify-content: space-around;
-}
-
-.adventures {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 10px;
-}
-
-.adventures figure {
-  text-align: center;
-}
-
-.footer {
-  display: flex;
-  justify-content: flex-end;
-  background-color: #333; /* Add your background color */
-  padding: 10px;
-}
-
-.footer img {
-  max-width: 30px; /* Adjust as needed */
-  margin-left: 10px; /* Adjust spacing between social icons */
-}
-/* Reset and General Styles */
-body {
-  font-family: 'Acme', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Header Styles */
-header {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 10px;
-}
-
-header img {
-  max-width: 100%;
-  height: auto;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Main Styles */
-main {
-  max-width: 800px;
-  margin: 20px auto;
-}
-
-/* Company Information Styles */
+/* Additional Styles */
 .company-info {
   margin-bottom: 20px;
 }
 
-/* Employee Profiles Styles */
 .employee-profiles {
   display: flex;
   flex-wrap: wrap;
@@ -220,14 +136,13 @@ main {
   color: #555;
 }
 
-/* Contact Form Styles */
 .contact-form {
   margin-bottom: 20px;
 }
 
 .contact-form form {
   display: grid;
-  grid-gap: 10px;
+  gap: 10px;
 }
 
 .contact-form label {
@@ -258,28 +173,3 @@ main {
   background-color: #333;
 }
 
-/* Footer Styles */
-footer {
-  background-color: var(--secondary-color);
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-/* Social Links Styles */
-.sociallinks {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.sociallinks a {
-  text-decoration: none;
-}
-
-.sociallinks img {
-  max-width: 30px;
-  height: auto;
-  margin-left: 10px;
-}

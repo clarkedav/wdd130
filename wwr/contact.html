@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - White Water Rafting</title>
-    <meta name="description" content="This is a rafting site.">
+    <meta name="description" content="contact page.">
     <meta name="author" content="Esumei David">
     <link rel="stylesheet" href="styles/rafting.css">
-    <!-- Additional Stylesheet for Contact Page -->
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Acme&family=Crimson+Pro:wght@200&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap">
 </head>
 <body>
 
@@ -23,7 +23,7 @@
     </header>
 
     <main>
-        <!-- Company Information Section -->
+        <h1>Contact Us - White Water Rafting</h1>
         <section class="company-info">
             <address>
                 Road 2, cornerstone estate, magboro, akeran city, lagos state.
@@ -41,21 +41,15 @@
         <section class="employee-profiles">
             <figure>
                 <img src="images/employee1.jpeg" alt="Employee 1">
-                <figcaption>
-                    Raft Mangager 
-                </figcaption>
+                <figcaption>Raft Manager</figcaption>
             </figure>
             <figure>
                 <img src="images/employee2.jpeg" alt="Employee 2">
-                <figcaption>
-                    Raft Security
-                </figcaption>
+                <figcaption>Raft Security</figcaption>
             </figure>
             <figure>
                 <img src="images/employee3.jpeg" alt="Employee 3">
-                <figcaption>
-                    Raft guide
-                </figcaption>
+                <figcaption>Raft Guide</figcaption>
             </figure>
         </section>
 
@@ -63,32 +57,33 @@
         <section class="contact-form">
             <h2>Contact Us</h2>
             <form>
-                <label for="q1">Name:</label>
-                <input type="text" id="q1" name="q1" required>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-                <label for="q2">Email:</label>
-                <textarea id="q2" name="q2" required></textarea>
+                <label for="email">Email:</label>
+                <textarea id="email" name="email" required></textarea>
 
-                <label for="q3">Purpose of Message:</label>
-                <select id="q3" name="q3" required>
+                <label for="purpose">Purpose of Message:</label>
+                <select id="purpose" name="purpose" required>
                     <option value="" selected disabled>Choose One ...</option>
                     <option value="general">General Inquiry</option>
                     <option value="reservation">Reservation Question</option>
                     <option value="suggestion">Website Suggestion</option>
                 </select>
 
-                <label for="q4">Message:</label>
-                <textarea id="q4" name="q4" required></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
 
                 <label>
                     <input type="checkbox" name="subscribe" value="subscribe">
                     Please subscribe me to the monthly newsletter
                 </label>
 
-                <button type="submit">Submit Quiz</button>
+                <button type="submit" id="submitBtn">Send Message</button>
             </form>
         </section>
     </main>
+
 
     <footer>
         <a href="https://app.moqups.com/70b1zKBAi1cJQ9W3CyDtgLRol1BZOIhS/view/page/ad12de680">Contact Us wireframe</a>
