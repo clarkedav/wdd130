@@ -172,4 +172,38 @@ footer {
 .contact-form button:hover {
   background-color: #333;
 }
+/* Add this CSS rule to styles/rafting.css */
+.newsletter {
+  background-color: #3498db; /* Use your preferred shade of blue */
+  color: white; /* Set text color to make it readable on the blue background */
+  padding: 20px;
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
 
+.newsletter form {
+  display: grid;
+  gap: 10px;
+}
+table {
+  width: 100%; /* Make the table take up 100% of the container */
+  margin-top: 20px; /* Add some space at the top of the table */
+  background-color: #cce5ff; /* Set the background color to a light blue shade */
+  border-collapse: collapse; /* Collapse borders for a cleaner look */
+}
+
+/* Styles for table headers */
+th {
+  background-color: #4d94ff; /* Set the background color for header cells */
+  color: white; /* Set text color to white */
+  padding: 12px; /* Add padding for better spacing */
+}
+
+/* Styles for table cells */
+td {
+  border: 1px solid #b3d9ff; /* Add border to cells */
+  padding: 8px; /* Add padding for better spacing */
+}
+
+/* Styles for alternating row colors (optional) */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray for even rows */

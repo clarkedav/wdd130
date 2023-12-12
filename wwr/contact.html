@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - White Water Rafting</title>
-    <meta name="description" content="contact page.">
+    <title>Contact-White Water Rafting</title>
+    <meta name="description" content="contact us for more information.">
     <meta name="author" content="Esumei David">
     <link rel="stylesheet" href="styles/rafting.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Acme&family=Crimson+Pro:wght@200&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap">
 </head>
 <body>
 
     <header>
-        <img src="images/Rapids_logo.jpg" alt="White Water Rafting Logo">
+        <img src="images/Rapids_logo.jpg" alt="White Water Rafting Logo" height="50" width="60">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -61,8 +59,6 @@
                 <input type="text" id="name" name="name" required>
 
                 <label for="email">Email:</label>
-                <textarea id="email" name="email" required></textarea>
-
                 <label for="purpose">Purpose of Message:</label>
                 <select id="purpose" name="purpose" required>
                     <option value="" selected disabled>Choose One ...</option>
@@ -72,14 +68,14 @@
                 </select>
 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
 
                 <label>
-                    <input type="checkbox" name="subscribe" value="subscribe">
+                    <input type="radio" name="subscribe" value="subscribe">
                     Please subscribe me to the monthly newsletter
                 </label>
-
+                <label>
                 <button type="submit" id="submitBtn">Send Message</button>
+                </label>
             </form>
         </section>
     </main>
