@@ -1,38 +1,36 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Crimson+Pro:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
 
 /* Define CSS variables for color scheme */
 :root {
   --primary-color: #75B9BE;
   --secondary-color: #FBB13C;
-  --text-color: #FE6847;;
+  --text-color: #1d1717;
 }
 
 /* General Styles */
-body {
+body,
+footer,
+header,
+header img,
+main,
+nav,
+nav a,
+.sociallinks,
+.sociallinks a,
+.sociallinks img,
+.hero img {
   font-family: 'Acme', sans-serif;
-  color: var(--text-color);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-.hero img {
-  position: relative;
-}
-
 
 /* Header Styles */
 header {
   background-color: var(--primary-color);
   color: white;
   padding: 10px;
-}
-
-header img {
-  max-width: 100%;
-  height: auto;
 }
 
 nav {
@@ -62,20 +60,20 @@ main {
   height: auto;
 }
 
-.hero h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--primary-color);
-  font-size: 2.5em;
-}
-
+.hero h1,
 .hero article {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+  color: var(--primary-color);
+  font-size: 2.5em;
+}
+
+.hero article {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   text-align: center;
@@ -109,49 +107,103 @@ footer {
   height: auto;
   margin: 0 10px;
 }
-body {
-  font-family: Acme, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+/* Additional Styles */
+.company-info {
+  margin-bottom: 20px;
 }
 
-.header {
-  display: grid;
-  grid-template-columns: auto 1fr auto; /* Adjust column widths as needed */
-  align-items: center;
-  background-color: #333; /* Add your background color */
-  color: white; /* Add your text color */
-  padding: 10px;
-}
-
-.logo {
-  max-width: 100px; /* Adjust as needed */
-}
-
-.nav {
+.employee-profiles {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.adventures {
+.employee-profiles figure {
+  text-align: center;
+  margin: 10px;
+}
+
+.employee-profiles img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.employee-profiles figcaption {
+  font-style: italic;
+  color: #555;
+}
+
+.contact-form {
+  margin-bottom: 20px;
+}
+
+.contact-form form {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 10px;
 }
 
-.adventures figure {
-  text-align: center;
+.contact-form label {
+  font-weight: bold;
 }
 
-.footer {
-  display: flex;
-  justify-content: flex-end;
-  background-color: #333; /* Add your background color */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.contact-form select {
+  cursor: pointer;
+}
+
+.contact-form button {
+  background-color: var(--secondary-color);
+  color: white;
   padding: 10px;
+  cursor: pointer;
+  border: none;
 }
 
-.footer img {
-  max-width: 30px; /* Adjust as needed */
-  margin-left: 10px; /* Adjust spacing between social icons */
+.contact-form button:hover {
+  background-color: #333;
 }
+/* Add this CSS rule to styles/rafting.css */
+.newsletter {
+  background-color: #3498db; /* Use your preferred shade of blue */
+  color: white; /* Set text color to make it readable on the blue background */
+  padding: 20px;
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+
+.newsletter form {
+  display: grid;
+  gap: 10px;
+}
+table {
+  width: 100%; /* Make the table take up 100% of the container */
+  margin-top: 20px; /* Add some space at the top of the table */
+  background-color: #cce5ff; /* Set the background color to a light blue shade */
+  border-collapse: collapse; /* Collapse borders for a cleaner look */
+}
+
+/* Styles for table headers */
+th {
+  background-color: #4d94ff; /* Set the background color for header cells */
+  color: white; /* Set text color to white */
+  padding: 12px; /* Add padding for better spacing */
+}
+
+/* Styles for table cells */
+td {
+  border: 1px solid #b3d9ff; /* Add border to cells */
+  padding: 8px; /* Add padding for better spacing */
+}
+
+/* Styles for alternating row colors (optional) */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray for even rows */
