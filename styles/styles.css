@@ -4,8 +4,20 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: steelblue;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
 main {
     max-width: 840px;
+    margin: 0 auto;
 }
 
 nav {
@@ -22,7 +34,7 @@ nav a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #fff; /* shorthand for white */
+    color: #fff;
 }
 
 h1 {
@@ -38,7 +50,7 @@ img {
 }
 
 img + p {
-    padding: 10px; /* Use + to select the immediate sibling p element after an img */
+    padding: 10px;
 }
 
 aside {
@@ -111,5 +123,4 @@ aside {
     grid-column: 1/2;
     grid-row: 1/2;
 }
-  
  
